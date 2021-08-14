@@ -1,0 +1,152 @@
+*{
+
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+
+    background-color: rgba(8, 165, 116, 0.975);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1, .header p{
+
+    color: white;
+    padding: 1vh;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.navigation a{
+
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li{
+
+    display: inline-block;
+    padding: 15px 30px;
+}
+
+.navbar a:hover{
+
+    text-decoration: underline;
+}
+
+.navbar li:hover{
+
+    background-color: rgba(255, 0, 0, 0.674);
+}
+
+.container{
+
+    display: flex;
+}
+
+.about-me{
+
+    width: 30%;
+    background-color: lightgray;
+}
+
+.about-me h2, .about-me p {
+
+    text-align: center;
+    padding: 1vh;
+    margin-left: 1vh;
+    margin-top: 2vh;
+}
+
+.main{
+
+    text-align: center;
+    width: 70%;
+}
+
+.main h2, .main p{
+
+    padding: 1vh;
+    margin-left: 1vh;
+    margin-top: 2vh;
+}
+
+.image-container{
+
+    text-align: center;
+    
+}
+
+.contact-me{
+
+    height: 200px;
+    background-color: rgba(8, 165, 116, 0.975);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+
+.social{
+
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    list-style-type: none;
+    
+}
+
+.social a{
+    padding: 10px;
+    text-decoration: none;
+}
+
+.contact-me ul{
+    font-size: 30px;
+}
+
+.contact-me h1{
+    color: white;
+}
+
+.fa{
+    color: white;
+}
+
+
+
+img {
+    width: 90%;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 500px){
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+        background-color: black;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-me, .main{
+        width: 100%;
+    }
+}
